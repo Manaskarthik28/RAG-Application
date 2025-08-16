@@ -16,4 +16,12 @@ Indexing
 4) Retrieve: Given a user input, relevant splits are retrieved from storage using a Retriever.
 
 5)Generate: A ChatModel / LLM produces an answer using a prompt that includes both the question with the retrieved data.
-Detailed walkthrough code explained with comments
+
+The ouput of RAG would alwayse be relevant documents.
+The blog is about LLM and question should be related to LLM to expect an appropriate response.
+
+"question":"what is Task Decomposition?"
+answer: Task decomposition is a planning technique where an agent breaks down large, complex tasks into smaller, simpler, and more manageable steps or subgoals. This process helps in efficiently handling complicated tasks and enhances model performance. It can be achieved through methods like Chain of Thought prompting, task-specific instructions, or human inputs.
+
+"question":"what is data science?" {This question is not relevant because the blog is a research about LLM so we dont get an answer so this what LLM gives in response}
+answer:I don't know the answer. The provided context does not contain a definition of data science.
